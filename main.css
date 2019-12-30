@@ -27,6 +27,13 @@ hr {
     padding: 0;
 }
 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+  }
+
 /*---------------------------------------------------------------------------*/	
 /* Begin Table Formating Definitions
 */
