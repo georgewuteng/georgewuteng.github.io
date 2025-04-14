@@ -2,7 +2,7 @@ BODY {
 	margin: 0px;
 	background-color: #eceff4;
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 	}
 
 .column {
@@ -41,17 +41,17 @@ hr {
 
 TABLE  {
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 	}
 	
 TD {
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 	}
 	
 TH {
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
 	}
 	
@@ -62,12 +62,12 @@ TH {
 	
 LI {
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 	}
 	
 UL {
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 	}
 
 p + ul {
@@ -76,11 +76,11 @@ p + ul {
 	
 OL {
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 	}
 
 .headline.destinationHead {
-	font-size: 16px;
+	font-size: 18px;
 	color: 6699ff;
 	font-weight: bold;
 	}
@@ -99,13 +99,13 @@ OL {
 /*---------------------------------------------------------------------------*/
 P {
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 ; color: #0b0c0f
 	}
 	
 H1 {
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
 	}
 	
@@ -116,14 +116,14 @@ FONT {
 SELECT {
 	font-family:Garamond, Times New Roman, serif;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 18px;
 	}
 
 TEXTAREA {
 	font-family:Garamond, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 	}
-a:active {  font-family:Garamond, Times New Roman, serif; font-size: 16px; color: #000000; text-decoration: none}
-a:visited {  font-family:Garamond, Times New Roman, serif; font-size: 16px; color: #8e9fbe; text-decoration: none}
-a:link {  font-family:Garamond, Times New Roman, serif; font-size: 16px; font-style: normal; text-decoration: none; color: #41548b}
-a:hover {  font-family:Garamond, Times New Roman, serif; font-size: 16px; color: #afb9d0; text-decoration: none}
+a:active {  font-family:Garamond, Times New Roman, serif; font-size: 18px; color: #000000; text-decoration: none}
+a:visited {  font-family:Garamond, Times New Roman, serif; font-size: 18px; color: #8e9fbe; text-decoration: none}
+a:link {  font-family:Garamond, Times New Roman, serif; font-size: 18px; font-style: normal; text-decoration: none; color: #41548b}
+a:hover {  font-family:Garamond, Times New Roman, serif; font-size: 18px; color: #afb9d0; text-decoration: none}
