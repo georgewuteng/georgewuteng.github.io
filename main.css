@@ -1,5 +1,9 @@
 BODY {
-	margin: 0px;
+	border-style: groove;
+	border-color: #a00505;
+	padding: 1px;
+	max-width: 70%;
+	margin: 5% auto;
 	background-color: #eceff4;
 	font-family:Garamond, Times New Roman, serif;
 	font-size: 18px;
@@ -88,7 +92,7 @@ OL {
 .headline.destinationTitle {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 18px;
 	color: CC99FF;
 	}
 
