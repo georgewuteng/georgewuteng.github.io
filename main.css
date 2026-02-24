@@ -1,131 +1,169 @@
-BODY {
-	padding: 1px;
-	max-width: 70%;
-	margin: 5% auto;
-	background-color: #eceff4;
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
+/*----------------------------------*/
+/* Base Layout */
+/*----------------------------------*/
+
+body {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1100px;              /* Better fixed max width */
+    width: 95%;                     /* Flexible scaling */
+    background-color: #eceff4;
+    font-family: Garamond, "Times New Roman", serif;
+    font-size: 18px;
+    box-sizing: border-box;
+	
+		padding: 20px;
+		margin: 20px auto;              /* Adds space around border */
+		max-width: 1100px;
+		width: 95%;
+		background-color: #eceff4;
+		font-family: Garamond, "Times New Roman", serif;
+		font-size: 18px;
+		box-sizing: border-box;
+	
+		border: 6px double #999999;     /* Double grey border */
 	}
 
+
+/* Make everything size properly */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/*----------------------------------*/
+/* Responsive Columns */
+/*----------------------------------*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;                /* Allows stacking */
+    gap: 40px;                      /* Space between columns */
+}
+
 .column {
-  float: left;
-  width: 40%;
-  padding-right: 75px;
+    flex: 1 1 400px;                /* Responsive columns */
+    padding-right: 0;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* Stack columns on small screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
 }
 
-hr {
+/*----------------------------------*/
+/* Images */
+/*----------------------------------*/
+
+img {
+    max-width: 100%;                /* Never overflow */
+    height: auto;                   /* Maintain ratio */
     display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
 
 .center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
-  }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+}
 
-/*---------------------------------------------------------------------------*/	
-/* Begin Table Formating Definitions
-*/
-/*---------------------------------------------------------------------------*/
+/*----------------------------------*/
+/* Typography */
+/*----------------------------------*/
 
-TABLE  {
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
-	}
-	
-TD {
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
-	}
-	
-TH {
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
-	font-weight: bold;
-	}
-	
-/*---------------------------------------------------------------------------*/	
-/* Begin List Formating Definitions
-*/
-/*---------------------------------------------------------------------------*/
-	
-LI {
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
-	}
-	
-UL {
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
-	}
+p, li, ul, ol, table, td, th, select, textarea, a {
+    font-family: Garamond, "Times New Roman", serif;
+    font-size: 18px;
+}
+
+p {
+    color: #0b0c0f;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*----------------------------------*/
+/* Headlines */
+/*----------------------------------*/
+
+.headline.destinationHead {
+    font-size: 18px;
+    color: #6699ff;     /* Fixed missing # */
+    font-weight: bold;
+}
+
+.headline.destinationTitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    color: #cc99ff;     /* Fixed missing # */
+}
+
+/*----------------------------------*/
+/* Horizontal Rule */
+/*----------------------------------*/
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+}
+
+/*----------------------------------*/
+/* Links */
+/*----------------------------------*/
+
+a {
+    text-decoration: none;
+}
+
+a:link { color: #41548b; }
+a:visited { color: #8e9fbe; }
+a:hover { color: #afb9d0; }
+a:active { color: #000000; }
+
+/*----------------------------------*/
+/* Tables */
+/*----------------------------------*/
+
+table {
+    width: 100%;                    /* Prevent overflow */
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+}
+
+/*----------------------------------*/
+/* Lists */
+/*----------------------------------*/
 
 p + ul {
     margin-top: -10px;
 }
-	
-OL {
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
-	}
 
-.headline.destinationHead {
-	font-size: 18px;
-	color: 6699ff;
-	font-weight: bold;
-	}
-	
-.headline.destinationTitle {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 18px;
-	color: CC99FF;
-	}
-
-
-/*---------------------------------------------------------------------------*/	
-/* Begin Formating Definitions for HTML elements
-*/
-/*---------------------------------------------------------------------------*/
-P {
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
-; color: #0b0c0f
-	}
-	
-H1 {
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
-	font-weight: bold;
-	}
-	
-FONT {
-	font-family:Garamond, Times New Roman, serif;
-	}
-
-SELECT {
-	font-family:Garamond, Times New Roman, serif;
-	font-weight: bold;
-	font-size: 18px;
-	}
-
-TEXTAREA {
-	font-family:Garamond, Times New Roman, serif;
-	font-size: 18px;
-	}
-a:active {  font-family:Garamond, Times New Roman, serif; font-size: 18px; color: #000000; text-decoration: none}
-a:visited {  font-family:Garamond, Times New Roman, serif; font-size: 18px; color: #8e9fbe; text-decoration: none}
-a:link {  font-family:Garamond, Times New Roman, serif; font-size: 18px; font-style: normal; text-decoration: none; color: #41548b}
-a:hover {  font-family:Garamond, Times New Roman, serif; font-size: 18px; color: #afb9d0; text-decoration: none}
+.content {
+	display: flex;
+	align-items: flex-start;   /* aligns top edges */
+	justify-content: space-between;
+  }
+  
+  .nav {
+	flex: 1;
+  }
+  
+  .image {
+	flex: 1;
+	text-align: right; /* pushes image to the right */
+  }
+  
+  .image img {
+	max-width: 100%;
+	height: auto;
+  }
